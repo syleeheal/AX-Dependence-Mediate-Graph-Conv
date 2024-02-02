@@ -27,7 +27,7 @@ cd ./AX-Dependence-Mediates-Graph-Conv/src
 
 ---
 
-## Reproduce Observations
+## Reproducing Observations
 
 To reproduce Observations 1-2 in **_Figure 2_**, run the following shell script code.
 ```bash
@@ -37,7 +37,7 @@ sh ./run/observations.sh
 
 ---
 
-## Reproduce CSBM-X Experiments
+## Reproducing CSBM-X Experiments
 To reproduce the CSBM-X experiments in **_Figure 5_**, run the following shell script code.
 ```bash
 sh ./run/csbmx_exps.sh
@@ -45,7 +45,7 @@ sh ./run/csbmx_exps.sh
 
 ---
 
-## Reproduce Feature Shuffle Experiments
+## Reproducing Feature Shuffle Experiments
 To reproduce the feature shuffle experiments in **_Figure 6_**, run the following shell script code.
 ```bash
 sh ./run/shuffle_exp(high_hc).sh         ### reproduce Figure 6
