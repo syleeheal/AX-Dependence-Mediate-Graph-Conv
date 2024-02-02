@@ -1,1 +1,1 @@
-# AX-Dependence-Mediate-Graph-Conv
+# AX-Dependence-Mediates-Graph-Conv
