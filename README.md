@@ -1,6 +1,6 @@
 # AX-Dependence-Mediates-Graph-Conv
 
-This is the code repository of the work "Feature Distribution on Graph Topology Mediates the Effect of Graph Convolution: Homophily Perspective."
+This is the code repository of the work "Feature Distribution on Graph Topology Mediates the Effect of Graph Convolution: Homophily Perspective." \
 The datasets and codes to reproduce Observations, CSBM-X experiments, and feature shuffle experiments are provided.
 
 ---
@@ -60,7 +60,6 @@ sh ./run/shuffle_exp(sparse_split).sh    ### reproduces Figure 16(b)
 
 ## Datasets
 Executing the codes will automatically download the designated datasets from [PyG](https://pytorch-geometric.readthedocs.io/en/latest/modules/datasets.html). \
-The codes to load the filtered **Chameleon** and **Squirrel** datasets, proposed by [Platonov et al. (2023, ICLR)](https://arxiv.org/pdf/2302.11640.pdf), are in _**filtered_dataset.py**_. \
 The loading and preprocessing codes for each dataset are in _**src/utils.py**_. 
 
 
