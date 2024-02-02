@@ -1,0 +1,7 @@
+Model: gpr
+Dataset: physics
+Train-Ratio: 0.025
+Best hyperparameters: {'dr': 0.001, 'dropout': 0.6, 'alpha': 0.5}
+Best test accuracy: 0.957020
+Parameter importance: {'dr': 0.6383813403459365, 'alpha': 0.3188863428606114, 'dropout': 0.04273231679345202}
+

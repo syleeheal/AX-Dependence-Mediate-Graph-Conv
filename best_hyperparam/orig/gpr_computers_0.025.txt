@@ -1,0 +1,7 @@
+Model: gpr
+Dataset: computers
+Train-Ratio: 0.025
+Best hyperparameters: {'dr': 0.0001, 'dropout': 0.6, 'alpha': 0.1}
+Best test accuracy: 0.872085
+Parameter importance: {'dropout': 0.8094778298941108, 'alpha': 0.10157391062835718, 'dr': 0.08894825947753209}
+

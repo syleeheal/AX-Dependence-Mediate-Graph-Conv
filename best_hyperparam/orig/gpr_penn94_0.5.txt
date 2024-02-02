@@ -1,0 +1,7 @@
+Model: gpr
+Dataset: penn94
+Train-Ratio: 0.5
+Best hyperparameters: {'dr': 0.0001, 'dropout': 0.5, 'alpha': 0.3}
+Best test accuracy: 0.837816
+Parameter importance: {'dr': 0.9565102819160162, 'dropout': 0.04260669747326534, 'alpha': 0.0008830206107184321}
+

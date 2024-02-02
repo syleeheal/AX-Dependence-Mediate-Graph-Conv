@@ -1,0 +1,7 @@
+Model: gpr
+Dataset: squirrel-filtered
+Train-Ratio: 0.5
+Best hyperparameters: {'dr': 0.005, 'dropout': 0.7, 'alpha': 0.5}
+Best test accuracy: 0.407407
+Parameter importance: {'dropout': 0.8243566490203417, 'dr': 0.12909348704208912, 'alpha': 0.04654986393756924}
+

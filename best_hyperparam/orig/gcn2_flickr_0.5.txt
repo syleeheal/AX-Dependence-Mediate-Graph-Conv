@@ -1,0 +1,7 @@
+Model: gcn2
+Dataset: flickr
+Train-Ratio: 0.5
+Best hyperparameters: {'num_layers': 4, 'dr': 5e-05, 'alpha': 0.1, 'lambd': 1.0, 'dropout': 0.5}
+Best test accuracy: 0.533127
+Parameter importance: {'num_layers': 0.5736695959326072, 'dr': 0.20471135778107855, 'lambd': 0.1739688518761494, 'alpha': 0.0277619032763859, 'dropout': 0.01988829113377895}
+

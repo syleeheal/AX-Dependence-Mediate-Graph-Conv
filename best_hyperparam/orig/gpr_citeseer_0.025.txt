@@ -1,0 +1,7 @@
+Model: gpr
+Dataset: citeseer
+Train-Ratio: 0.025
+Best hyperparameters: {'dr': 0.005, 'dropout': 0.8, 'alpha': 0.1}
+Best test accuracy: 0.668354
+Parameter importance: {'dr': 0.5150995309879407, 'dropout': 0.3449311507988808, 'alpha': 0.13996931821317857}
+

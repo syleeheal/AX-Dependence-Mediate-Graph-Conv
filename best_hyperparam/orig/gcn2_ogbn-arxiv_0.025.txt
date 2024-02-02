@@ -1,0 +1,7 @@
+Model: gcn2
+Dataset: ogbn-arxiv
+Train-Ratio: 0.025
+Best hyperparameters: {'num_layers': 16, 'dr': 5e-05, 'alpha': 0.1, 'lambd': 1.0, 'dropout': 0.5}
+Best test accuracy: 0.669908
+Parameter importance: {'dr': 0.46149579624528897, 'dropout': 0.224936162004466, 'alpha': 0.17974060997528402, 'num_layers': 0.10532177843542163, 'lambd': 0.02850565333953934}
+

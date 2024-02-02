@@ -1,0 +1,7 @@
+Model: gcn2
+Dataset: citeseer
+Train-Ratio: 0.01
+Best hyperparameters: {'num_layers': 8, 'dr': 0.0005, 'alpha': 0.1, 'lambd': 1.0, 'dropout': 0.6}
+Best test accuracy: 0.600640
+Parameter importance: {'alpha': 0.7080410679903402, 'num_layers': 0.15829375895686404, 'lambd': 0.09048427579263756, 'dropout': 0.028418759308823868, 'dr': 0.014762137951334332}
+

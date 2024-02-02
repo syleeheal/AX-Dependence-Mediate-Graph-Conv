@@ -1,0 +1,7 @@
+Model: gpr
+Dataset: texas
+Train-Ratio: 0.5
+Best hyperparameters: {'dr': 0.005, 'dropout': 0.8, 'alpha': 0.3}
+Best test accuracy: 0.884354
+Parameter importance: {'dropout': 0.48912919243669833, 'dr': 0.4806881282916754, 'alpha': 0.030182679271626305}
+

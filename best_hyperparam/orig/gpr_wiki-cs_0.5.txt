@@ -1,0 +1,7 @@
+Model: gpr
+Dataset: wiki-cs
+Train-Ratio: 0.5
+Best hyperparameters: {'dr': 0.0001, 'dropout': 0.5, 'alpha': 0.5}
+Best test accuracy: 0.846548
+Parameter importance: {'dropout': 0.6221930928904735, 'dr': 0.36191156962958315, 'alpha': 0.015895337479943362}
+

@@ -1,0 +1,7 @@
+Model: gcn2
+Dataset: wiki-cs
+Train-Ratio: 0.025
+Best hyperparameters: {'num_layers': 32, 'dr': 0.0005, 'alpha': 0.1, 'lambd': 0.5, 'dropout': 0.7}
+Best test accuracy: 0.784219
+Parameter importance: {'alpha': 0.4741177858937657, 'num_layers': 0.18839181398657326, 'lambd': 0.17348647266690112, 'dropout': 0.10115757002723476, 'dr': 0.0628463574255252}
+

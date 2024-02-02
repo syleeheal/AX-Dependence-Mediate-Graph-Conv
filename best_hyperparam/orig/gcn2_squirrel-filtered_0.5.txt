@@ -1,0 +1,7 @@
+Model: gcn2
+Dataset: squirrel-filtered
+Train-Ratio: 0.5
+Best hyperparameters: {'num_layers': 8, 'dr': 0.0005, 'alpha': 0.1, 'lambd': 1.5, 'dropout': 0.7}
+Best test accuracy: 0.401434
+Parameter importance: {'dr': 0.5074216371815478, 'dropout': 0.30574581997492717, 'alpha': 0.1441012174823006, 'num_layers': 0.033198898440354264, 'lambd': 0.009532426920870118}
+

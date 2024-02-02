@@ -1,0 +1,7 @@
+Model: gpr
+Dataset: pubmed
+Train-Ratio: 0.025
+Best hyperparameters: {'dr': 0.001, 'dropout': 0.7, 'alpha': 0.5}
+Best test accuracy: 0.857489
+Parameter importance: {'dropout': 0.41741980023587466, 'dr': 0.3717210162043389, 'alpha': 0.21085918355978656}
+

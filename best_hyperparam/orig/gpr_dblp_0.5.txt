@@ -1,0 +1,7 @@
+Model: gpr
+Dataset: dblp
+Train-Ratio: 0.5
+Best hyperparameters: {'dr': 0.001, 'dropout': 0.6, 'alpha': 0.5}
+Best test accuracy: 0.866336
+Parameter importance: {'dropout': 0.6786244800548865, 'dr': 0.28774199557355157, 'alpha': 0.03363352437156201}
+

@@ -1,0 +1,7 @@
+Model: gpr
+Dataset: amazon-ratings
+Train-Ratio: 0.5
+Best hyperparameters: {'dr': 0.0001, 'dropout': 0.5, 'alpha': 0.5}
+Best test accuracy: 0.462673
+Parameter importance: {'dr': 0.6849175618166452, 'dropout': 0.3132344218601066, 'alpha': 0.0018480163232483064}
+

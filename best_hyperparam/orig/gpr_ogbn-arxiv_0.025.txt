@@ -1,0 +1,7 @@
+Model: gpr
+Dataset: ogbn-arxiv
+Train-Ratio: 0.025
+Best hyperparameters: {'dr': 0.0005, 'dropout': 0.5, 'alpha': 0.3}
+Best test accuracy: 0.684119
+Parameter importance: {'dropout': 0.9751257102299803, 'dr': 0.02012717890616883, 'alpha': 0.004747110863850952}
+

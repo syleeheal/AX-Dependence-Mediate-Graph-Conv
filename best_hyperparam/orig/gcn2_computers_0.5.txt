@@ -1,0 +1,7 @@
+Model: gcn2
+Dataset: computers
+Train-Ratio: 0.5
+Best hyperparameters: {'num_layers': 4, 'dr': 5e-06, 'alpha': 0.1, 'lambd': 1.0, 'dropout': 0.6}
+Best test accuracy: 0.925259
+Parameter importance: {'dropout': 0.6071799462439276, 'dr': 0.1458167550076155, 'alpha': 0.11439970245897323, 'num_layers': 0.1051150005976981, 'lambd': 0.02748859569178554}
+

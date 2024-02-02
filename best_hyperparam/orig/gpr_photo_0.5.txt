@@ -1,0 +1,7 @@
+Model: gpr
+Dataset: photo
+Train-Ratio: 0.5
+Best hyperparameters: {'dr': 0.0001, 'dropout': 0.5, 'alpha': 0.3}
+Best test accuracy: 0.954347
+Parameter importance: {'dropout': 0.9753939282136017, 'dr': 0.013210085383455604, 'alpha': 0.011395986402942681}
+

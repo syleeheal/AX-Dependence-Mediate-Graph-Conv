@@ -1,0 +1,7 @@
+Model: gpr
+Dataset: cora
+Train-Ratio: 0.5
+Best hyperparameters: {'dr': 0.001, 'dropout': 0.7, 'alpha': 0.3}
+Best test accuracy: 0.890694
+Parameter importance: {'dropout': 0.7167325899060782, 'dr': 0.181472880752419, 'alpha': 0.10179452934150274}
+

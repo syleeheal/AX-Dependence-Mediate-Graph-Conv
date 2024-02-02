@@ -1,0 +1,7 @@
+Model: gpr
+Dataset: chameleon-filtered
+Train-Ratio: 0.5
+Best hyperparameters: {'dr': 0.005, 'dropout': 0.8, 'alpha': 0.1}
+Best test accuracy: 0.445926
+Parameter importance: {'dropout': 0.6650946444303593, 'dr': 0.1918666854636478, 'alpha': 0.14303867010599294}
+

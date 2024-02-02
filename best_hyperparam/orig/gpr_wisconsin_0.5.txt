@@ -1,0 +1,7 @@
+Model: gpr
+Dataset: wisconsin
+Train-Ratio: 0.5
+Best hyperparameters: {'dr': 0.005, 'dropout': 0.6, 'alpha': 0.3}
+Best test accuracy: 0.887179
+Parameter importance: {'dr': 0.689767570352268, 'dropout': 0.22414430132610913, 'alpha': 0.08608812832162287}
+

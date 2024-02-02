@@ -1,0 +1,7 @@
+Model: gpr
+Dataset: cornell
+Train-Ratio: 0.5
+Best hyperparameters: {'dr': 0.005, 'dropout': 0.6, 'alpha': 0.1}
+Best test accuracy: 0.819444
+Parameter importance: {'dr': 0.7878661285491728, 'dropout': 0.12937182872072708, 'alpha': 0.0827620427301001}
+
