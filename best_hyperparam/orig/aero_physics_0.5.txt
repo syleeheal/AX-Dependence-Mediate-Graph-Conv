@@ -1,0 +1,7 @@
+Model: aero
+Dataset: physics
+Train-Ratio: 0.5
+Best hyperparameters: {'num_layers': 2, 'iterations': 4, 'dr': 0.0005, 'lambd': 0.5, 'dropout': 0.5}
+Best test accuracy: 0.971426
+Parameter importance: {'dropout': 0.5552536383136786, 'iterations': 0.14113115197377857, 'lambd': 0.12301050622050118, 'num_layers': 0.11433091268743356, 'dr': 0.06627379080460813}
+

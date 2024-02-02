@@ -1,0 +1,7 @@
+Model: aero
+Dataset: actor
+Train-Ratio: 0.5
+Best hyperparameters: {'num_layers': 2, 'iterations': 8, 'dr': 0.005, 'lambd': 1, 'dropout': 0.5}
+Best test accuracy: 0.367229
+Parameter importance: {'num_layers': 0.6570518392904285, 'dr': 0.14380667217116297, 'iterations': 0.10449710317659919, 'dropout': 0.06676056335914095, 'lambd': 0.02788382200266841}
+

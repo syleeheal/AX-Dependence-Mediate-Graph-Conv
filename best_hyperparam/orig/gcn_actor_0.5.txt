@@ -1,0 +1,7 @@
+Model: gcn
+Dataset: actor
+Train-Ratio: 0.5
+Best hyperparameters: {'dr': 0.0001, 'dropout': 0.7, 'num_layers': 2}
+Best test accuracy: 0.307193
+Parameter importance: {'dr': 0.5398677503282426, 'num_layers': 0.45673507989448, 'dropout': 0.0033971697772773916}
+

@@ -1,0 +1,7 @@
+Model: aero
+Dataset: dblp
+Train-Ratio: 0.025
+Best hyperparameters: {'num_layers': 2, 'iterations': 16, 'dr': 0.005, 'lambd': 1.5, 'dropout': 0.8}
+Best test accuracy: 0.837155
+Parameter importance: {'iterations': 0.5795832257952515, 'dropout': 0.3334270367806811, 'num_layers': 0.052655758095997755, 'dr': 0.030713581221353484, 'lambd': 0.0036203981067162512}
+

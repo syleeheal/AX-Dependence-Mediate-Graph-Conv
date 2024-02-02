@@ -1,0 +1,7 @@
+Model: gcn
+Dataset: actor
+Split: fixed
+Best hyperparameters: {'dr': 0.005, 'dropout': 0.7, 'num_layers': 2}
+Best test accuracy: 0.252909
+Parameter importance: OrderedDict([('dr', 0.6217732865134316), ('num_layers', 0.3769654083011182), ('dropout', 0.0012613051854500925)])
+

@@ -1,0 +1,7 @@
+Model: gcn
+Dataset: roman-empire
+Train-Ratio: 0.5
+Best hyperparameters: {'dr': 0.0001, 'dropout': 0.5, 'num_layers': 2}
+Best test accuracy: 0.479939
+Parameter importance: {'dr': 0.6616474992671681, 'num_layers': 0.3251942626291227, 'dropout': 0.013158238103709181}
+

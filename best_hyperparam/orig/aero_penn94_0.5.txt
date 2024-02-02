@@ -1,0 +1,7 @@
+Model: aero
+Dataset: penn94
+Train-Ratio: 0.5
+Best hyperparameters: {'num_layers': 2, 'iterations': 4, 'dr': 0.0005, 'lambd': 0.5, 'dropout': 0.5}
+Best test accuracy: 0.835823
+Parameter importance: {'dr': 0.8273758674916457, 'lambd': 0.08251175858874964, 'dropout': 0.057871764065933584, 'num_layers': 0.016130552631281152, 'iterations': 0.01611005722239004}
+

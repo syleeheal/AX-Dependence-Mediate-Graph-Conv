@@ -1,0 +1,7 @@
+Model: gcn
+Dataset: cornell
+Train-Ratio: 0.5
+Best hyperparameters: {'dr': 0.0005, 'dropout': 0.5, 'num_layers': 2}
+Best test accuracy: 0.486111
+Parameter importance: {'num_layers': 0.7514214878264376, 'dropout': 0.194519808403766, 'dr': 0.05405870376979637}
+

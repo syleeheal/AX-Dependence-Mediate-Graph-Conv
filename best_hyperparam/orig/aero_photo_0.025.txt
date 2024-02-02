@@ -1,0 +1,7 @@
+Model: aero
+Dataset: photo
+Train-Ratio: 0.025
+Best hyperparameters: {'num_layers': 2, 'iterations': 8, 'dr': 0.01, 'lambd': 1, 'dropout': 0.5}
+Best test accuracy: 0.923976
+Parameter importance: {'num_layers': 0.41581162414467565, 'lambd': 0.4042189420355819, 'dropout': 0.10968867015219386, 'iterations': 0.05054137559389749, 'dr': 0.019739388073651002}
+

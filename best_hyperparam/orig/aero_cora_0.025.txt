@@ -1,0 +1,7 @@
+Model: aero
+Dataset: cora
+Train-Ratio: 0.025
+Best hyperparameters: {'num_layers': 2, 'iterations': 16, 'dr': 0.005, 'lambd': 0.25, 'dropout': 0.6}
+Best test accuracy: 0.819897
+Parameter importance: {'dropout': 0.4755433500490625, 'dr': 0.22647639332239397, 'iterations': 0.21712940413565976, 'lambd': 0.04974723723736069, 'num_layers': 0.03110361525552313}
+

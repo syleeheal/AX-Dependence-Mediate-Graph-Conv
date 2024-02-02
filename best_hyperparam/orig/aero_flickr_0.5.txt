@@ -1,0 +1,7 @@
+Model: aero
+Dataset: flickr
+Train-Ratio: 0.5
+Best hyperparameters: {'num_layers': 1, 'iterations': 16, 'dr': 0.0005, 'lambd': 1, 'dropout': 0.5}
+Best test accuracy: 0.529752
+Parameter importance: {'dr': 0.9828061126382812, 'iterations': 0.011107131381050796, 'lambd': 0.0024084716611015825, 'dropout': 0.002251703804721786, 'num_layers': 0.0014265805148445635}
+

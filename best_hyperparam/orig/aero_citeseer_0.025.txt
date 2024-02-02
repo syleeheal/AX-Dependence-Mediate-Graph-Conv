@@ -1,0 +1,7 @@
+Model: aero
+Dataset: citeseer
+Train-Ratio: 0.025
+Best hyperparameters: {'num_layers': 1, 'iterations': 32, 'dr': 0.01, 'lambd': 0.5, 'dropout': 0.5}
+Best test accuracy: 0.673399
+Parameter importance: {'dr': 0.4661428531334114, 'iterations': 0.23986398091669014, 'dropout': 0.17664654943111643, 'num_layers': 0.07097512800172984, 'lambd': 0.04637148851705207}
+

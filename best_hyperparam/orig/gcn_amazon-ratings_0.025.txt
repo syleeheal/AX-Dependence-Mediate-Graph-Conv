@@ -1,0 +1,7 @@
+Model: gcn
+Dataset: amazon-ratings
+Split: fixed
+Best hyperparameters: {'dr': 0.001, 'dropout': 0.7, 'num_layers': 2}
+Best test accuracy: 0.386780
+Parameter importance: OrderedDict([('dr', 0.5914367472261289), ('num_layers', 0.37827342541438436), ('dropout', 0.030289827359486602)])
+

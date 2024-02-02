@@ -1,0 +1,7 @@
+Model: gcn
+Dataset: tolokers
+Train-Ratio: 0.5
+Best hyperparameters: {'dr': 0.0001, 'dropout': 0.5, 'num_layers': 3}
+Best test accuracy: 0.794444
+Parameter importance: {'dr': 0.4953476315059581, 'dropout': 0.28734223821648935, 'num_layers': 0.21731013027755253}
+

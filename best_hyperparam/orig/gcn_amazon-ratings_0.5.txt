@@ -1,0 +1,7 @@
+Model: gcn
+Dataset: amazon-ratings
+Train-Ratio: 0.5
+Best hyperparameters: {'dr': 0.0001, 'dropout': 0.5, 'num_layers': 3}
+Best test accuracy: 0.460667
+Parameter importance: {'dr': 0.9892645712997643, 'num_layers': 0.009059516000633054, 'dropout': 0.001675912699602684}
+

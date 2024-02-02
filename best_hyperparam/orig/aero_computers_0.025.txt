@@ -1,0 +1,7 @@
+Model: aero
+Dataset: computers
+Train-Ratio: 0.025
+Best hyperparameters: {'num_layers': 2, 'iterations': 8, 'dr': 0.001, 'lambd': 0.25, 'dropout': 0.5}
+Best test accuracy: 0.870450
+Parameter importance: {'lambd': 0.43506080072625425, 'num_layers': 0.30739847806753484, 'iterations': 0.20793721827450332, 'dropout': 0.03193070177724536, 'dr': 0.01767280115446224}
+

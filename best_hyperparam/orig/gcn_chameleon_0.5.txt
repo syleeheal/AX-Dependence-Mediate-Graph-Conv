@@ -1,0 +1,7 @@
+Model: gcn
+Dataset: chameleon
+Train-Ratio: 0.5
+Best hyperparameters: {'dr': 0.0001, 'dropout': 0.7, 'num_layers': 2}
+Best test accuracy: 0.646199
+Parameter importance: {'dr': 0.6387014031697733, 'num_layers': 0.3548576599720859, 'dropout': 0.006440936858140905}
+

@@ -1,0 +1,7 @@
+Model: gcn
+Dataset: chameleon-filtered
+Split: fixed
+Best hyperparameters: {'dr': 0.005, 'dropout': 0.6, 'num_layers': 2}
+Best test accuracy: 0.437037
+Parameter importance: OrderedDict([('dr', 0.5553367313277281), ('num_layers', 0.3328639637168881), ('dropout', 0.11179930495538398)])
+

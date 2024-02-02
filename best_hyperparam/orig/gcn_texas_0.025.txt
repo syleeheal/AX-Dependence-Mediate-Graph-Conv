@@ -1,0 +1,7 @@
+Model: gcn
+Dataset: texas
+Split: fixed
+Best hyperparameters: {'dr': 0.005, 'dropout': 0.5, 'num_layers': 2}
+Best test accuracy: 0.566857
+Parameter importance: OrderedDict([('num_layers', 0.9391025153862321), ('dropout', 0.031012322666246588), ('dr', 0.029885161947521294)])
+

@@ -1,0 +1,7 @@
+Model: gcn
+Dataset: cora-full
+Train-Ratio: 0.025
+Best hyperparameters: {'dr': 0.0001, 'dropout': 0.5, 'num_layers': 2}
+Best test accuracy: 0.549552
+Parameter importance: {'num_layers': 0.9551796242708621, 'dr': 0.02734870235314463, 'dropout': 0.017471673375993303}
+

@@ -1,0 +1,7 @@
+Model: aero
+Dataset: wisconsin
+Train-Ratio: 0.5
+Best hyperparameters: {'num_layers': 2, 'iterations': 16, 'dr': 0.001, 'lambd': 0.5, 'dropout': 0.6}
+Best test accuracy: 0.857923
+Parameter importance: {'num_layers': 0.7071399324085634, 'iterations': 0.1358243561770891, 'lambd': 0.06114152180345233, 'dropout': 0.05451843572887909, 'dr': 0.04137575388201598}
+

@@ -1,0 +1,7 @@
+Model: gcn
+Dataset: squirrel
+Train-Ratio: 0.5
+Best hyperparameters: {'dr': 0.0001, 'dropout': 0.5, 'num_layers': 2}
+Best test accuracy: 0.473738
+Parameter importance: {'dr': 0.6832377846326327, 'num_layers': 0.3111959375165563, 'dropout': 0.005566277850811056}
+

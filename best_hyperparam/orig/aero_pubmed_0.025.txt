@@ -1,0 +1,7 @@
+Model: aero
+Dataset: pubmed
+Train-Ratio: 0.025
+Best hyperparameters: {'num_layers': 2, 'iterations': 4, 'dr': 0.005, 'lambd': 1, 'dropout': 0.7}
+Best test accuracy: 0.858945
+Parameter importance: {'dr': 0.6306744547180324, 'iterations': 0.26553234015970434, 'dropout': 0.06660375989687285, 'num_layers': 0.020208823010472304, 'lambd': 0.01698062221491812}
+

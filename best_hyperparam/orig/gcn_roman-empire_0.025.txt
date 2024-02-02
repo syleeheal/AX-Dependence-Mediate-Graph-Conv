@@ -1,0 +1,7 @@
+Model: gcn
+Dataset: roman-empire
+Split: fixed
+Best hyperparameters: {'dr': 0.0005, 'dropout': 0.6, 'num_layers': 2}
+Best test accuracy: 0.351946
+Parameter importance: OrderedDict([('num_layers', 0.9227567254449429), ('dr', 0.06630014193369686), ('dropout', 0.010943132621360268)])
+

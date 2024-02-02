@@ -1,0 +1,7 @@
+Model: gcn
+Dataset: squirrel-filtered
+Split: fixed
+Best hyperparameters: {'dr': 0.005, 'dropout': 0.6, 'num_layers': 2}
+Best test accuracy: 0.413406
+Parameter importance: OrderedDict([('dr', 0.5871863476977105), ('num_layers', 0.36229765482943044), ('dropout', 0.05051599747285914)])
+

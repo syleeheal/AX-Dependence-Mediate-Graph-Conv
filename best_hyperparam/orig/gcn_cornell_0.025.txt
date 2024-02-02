@@ -1,0 +1,7 @@
+Model: gcn
+Dataset: cornell
+Split: fixed
+Best hyperparameters: {'dr': 0.0005, 'dropout': 0.5, 'num_layers': 2}
+Best test accuracy: 0.428571
+Parameter importance: OrderedDict([('num_layers', 0.744456699432717), ('dropout', 0.14788155457491534), ('dr', 0.10766174599236768)])
+

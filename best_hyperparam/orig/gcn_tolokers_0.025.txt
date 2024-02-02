@@ -1,0 +1,7 @@
+Model: gcn
+Dataset: tolokers
+Split: fixed
+Best hyperparameters: {'dr': 0.0001, 'dropout': 0.5, 'num_layers': 2}
+Best test accuracy: 0.735709
+Parameter importance: OrderedDict([('dr', 0.6120911450924903), ('num_layers', 0.37327341284673504), ('dropout', 0.014635442060774701)])
+

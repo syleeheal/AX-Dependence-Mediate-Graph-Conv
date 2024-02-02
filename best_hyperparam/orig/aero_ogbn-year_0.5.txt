@@ -1,0 +1,7 @@
+Model: aero
+Dataset: ogbn-year
+Train-Ratio: 0.5
+Best hyperparameters: {'num_layers': 1, 'iterations': 8, 'dr': 0.0005, 'lambd': 0.5, 'dropout': 0.5}
+Best test accuracy: 0.411422
+Parameter importance: {'iterations': 0.38404271158231196, 'dr': 0.22376409837529368, 'lambd': 0.20935619686995433, 'num_layers': 0.12461319828048799, 'dropout': 0.05822379489195207}
+

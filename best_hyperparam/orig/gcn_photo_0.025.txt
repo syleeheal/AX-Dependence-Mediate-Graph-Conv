@@ -1,0 +1,7 @@
+Model: gcn
+Dataset: photo
+Train-Ratio: 0.025
+Best hyperparameters: {'dr': 0.0005, 'dropout': 0.7, 'num_layers': 2}
+Best test accuracy: 0.919281
+Parameter importance: {'num_layers': 0.9280412277066133, 'dr': 0.03978695829265227, 'dropout': 0.032171814000734385}
+

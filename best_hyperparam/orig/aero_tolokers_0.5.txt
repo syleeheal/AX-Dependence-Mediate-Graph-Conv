@@ -1,0 +1,7 @@
+Model: aero
+Dataset: tolokers
+Train-Ratio: 0.5
+Best hyperparameters: {'num_layers': 1, 'iterations': 16, 'dr': 0.0005, 'lambd': 1.5, 'dropout': 0.5}
+Best test accuracy: 0.801474
+Parameter importance: {'dr': 0.2922394863254412, 'num_layers': 0.28534395474257995, 'dropout': 0.23086955815435226, 'iterations': 0.16270601174616756, 'lambd': 0.028840989031458996}
+

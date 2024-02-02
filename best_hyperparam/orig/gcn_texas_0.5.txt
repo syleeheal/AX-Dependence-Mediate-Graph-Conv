@@ -1,0 +1,7 @@
+Model: gcn
+Dataset: texas
+Train-Ratio: 0.5
+Best hyperparameters: {'dr': 0.001, 'dropout': 0.6, 'num_layers': 4}
+Best test accuracy: 0.578231
+Parameter importance: {'num_layers': 0.4643100649960503, 'dropout': 0.406550136559391, 'dr': 0.1291397984445587}
+

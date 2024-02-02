@@ -1,0 +1,7 @@
+Model: gcn
+Dataset: physics
+Train-Ratio: 0.5
+Best hyperparameters: {'dr': 0.0001, 'dropout': 0.5, 'num_layers': 2}
+Best test accuracy: 0.964904
+Parameter importance: {'dr': 0.7652515948621402, 'num_layers': 0.22665097343761478, 'dropout': 0.00809743170024498}
+

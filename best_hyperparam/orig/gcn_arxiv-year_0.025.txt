@@ -1,0 +1,7 @@
+Model: gcn
+Dataset: arxiv-year
+Split: fixed
+Best hyperparameters: {'dr': 0.001, 'dropout': 0.5, 'num_layers': 4}
+Best test accuracy: 0.418695
+Parameter importance: OrderedDict([('num_layers', 0.8236985897041563), ('dr', 0.16666307940203237), ('dropout', 0.009638330893811305)])
+

@@ -1,0 +1,7 @@
+Model: gcn
+Dataset: questions
+Split: fixed
+Best hyperparameters: {'dr': 0.001, 'dropout': 0.5, 'num_layers': 4}
+Best test accuracy: 0.667943
+Parameter importance: OrderedDict([('dr', 0.7352285729312957), ('num_layers', 0.26291871036367287), ('dropout', 0.0018527167050313696)])
+

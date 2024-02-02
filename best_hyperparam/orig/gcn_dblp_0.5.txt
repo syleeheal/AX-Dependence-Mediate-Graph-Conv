@@ -1,0 +1,7 @@
+Model: gcn
+Dataset: dblp
+Train-Ratio: 0.5
+Best hyperparameters: {'dr': 0.001, 'dropout': 0.6, 'num_layers': 3}
+Best test accuracy: 0.862949
+Parameter importance: {'dr': 0.711520015614406, 'num_layers': 0.26376031902292646, 'dropout': 0.024719665362667526}
+

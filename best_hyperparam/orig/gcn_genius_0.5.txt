@@ -1,0 +1,7 @@
+Model: gcn
+Dataset: genius
+Split: fixed
+Best hyperparameters: {'dr': 0.0001, 'dropout': 0.5, 'num_layers': 2}
+Best test accuracy: 0.844990
+Parameter importance: OrderedDict([('num_layers', 0.9747722163311949), ('dropout', 0.013852442774649816), ('dr', 0.011375340894155267)])
+
