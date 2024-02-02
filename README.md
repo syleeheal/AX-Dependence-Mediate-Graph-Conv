@@ -48,12 +48,12 @@ sh ./run/csbmx_exps.sh
 ## Reproducing Feature Shuffle Experiments
 To reproduce the feature shuffle experiments in **_Figure 6_**, run the following shell script code.
 ```bash
-sh ./run/shuffle_exp(high_hc).sh         ### reproduce Figure 6
-sh ./run/shuffle_exp(low_hc).sh          ### reproduce Figure 7
-sh ./run/shuffle_exp(low_fd).sh          ### reproduce Figure 8
-sh ./run/shuffle_exp(other_gnns).sh      ### reproduce Figure 9
-sh ./run/shuffle_exp(proximity_feat).sh  ### reproduce Figure 10
-sh ./run/shuffle_exp(sparse_split).sh    ### reproduce Figure 16(b)
+sh ./run/shuffle_exp(high_hc).sh         ### reproduces Figure 6
+sh ./run/shuffle_exp(low_hc).sh          ### reproduces Figure 7
+sh ./run/shuffle_exp(low_fd).sh          ### reproduces Figure 8
+sh ./run/shuffle_exp(other_gnns).sh      ### reproduces Figure 9
+sh ./run/shuffle_exp(proximity_feat).sh  ### reproduces Figure 10
+sh ./run/shuffle_exp(sparse_split).sh    ### reproduces Figure 16(b)
 ```
 
 ---
