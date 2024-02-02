@@ -12,7 +12,7 @@ The **_./best_hyperparam/_** folder saves all the searched best hyperparameters.
 
 The **_./run/_** folder has the shell scripts to reproduce the experimental outcomes.
 
-The **_./data/_** folder saves (_i_) the raw dataset and (_ii_) their Node2Vec vector.
+The **_./data/_** folder saves (_i_) the raw dataset and (_ii_) their Node2Vec vectors.
 
 The **_./results/_** folder saves all the experimental outcomes in CSV format.
 
@@ -20,7 +20,7 @@ We further provide the requirement.txt and random seeds used for the experiments
 
 ---
 
-## Base directory
+## Base Directory
 ```bash
 cd ./AX-Dependence-Mediates-Graph-Conv/src
 ```
@@ -48,32 +48,12 @@ sh ./run/csbmx_exps.sh
 ## Reproduce Feature Shuffle Experiments
 To reproduce the feature shuffle experiments in **_Figure 6_**, run the following shell script code.
 ```bash
-sh ./run/shuffle_exp(high_hc).sh
-```
-
-To reproduce the feature shuffle experiments in **_Figure 7_**, run the following shell script code.
-```bash
-sh ./run/shuffle_exp(low_hc).sh
-```
-
-To reproduce the feature shuffle experiments in **_Figure 8_**, run the following shell script code.
-```bash
-sh ./run/shuffle_exp(low_fd).sh
-```
-
-To reproduce the feature shuffle experiments in **_Figure 9_**, run the following shell script code.
-```bash
-sh ./run/shuffle_exp(other_gnns).sh
-```
-
-To reproduce the feature shuffle experiments in **_Figure 10_**, run the following shell script code.
-```bash
-sh ./run/shuffle_exp(proximity_feat).sh
-```
-
-To reproduce the feature shuffle experiments in **_Figure 16(b)_**, run the following shell script code.
-```bash
-sh ./run/shuffle_exp(sparse_split).sh
+sh ./run/shuffle_exp(high_hc).sh         ### reproduce Figure 6
+sh ./run/shuffle_exp(low_hc).sh          ### reproduce Figure 7
+sh ./run/shuffle_exp(low_fd).sh          ### reproduce Figure 8
+sh ./run/shuffle_exp(other_gnns).sh      ### reproduce Figure 9
+sh ./run/shuffle_exp(proximity_feat).sh  ### reproduce Figure 10
+sh ./run/shuffle_exp(sparse_split).sh    ### reproduce Figure 16(b)
 ```
 
 ---
