@@ -1,1 +1,0 @@
-This is the code repository of the work "Feature Distribution on Graph Topology Mediates the Effect of Graph Convolution: Homophily Perspective."
