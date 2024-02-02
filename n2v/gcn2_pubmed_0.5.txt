@@ -1,7 +1,0 @@
-Model: gcn2
-Dataset: pubmed
-Train-Ratio: 0.5
-Best hyperparameters: {'num_layers': 16, 'dr': 5e-05, 'alpha': 0.1, 'lambd': 1.5, 'dropout': 0.5}
-Best test accuracy: 0.840935
-Parameter importance: {'dropout': 0.50163010632369, 'num_layers': 0.19884059202572812, 'alpha': 0.1920838774225101, 'lambd': 0.05540406436980497, 'dr': 0.05204135985826692}
-
