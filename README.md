@@ -4,7 +4,7 @@ This is the code repository of the work "Feature Distribution on Graph Topology 
 The datasets and codes to reproduce Observations, CSBM-X experiments, and feature shuffle experiments are provided.
 
 ---
-## The Basics
+## Basics
 
 The codes for algorithms and experiments are provided in **_./src/_** folder, including (_i_) the experiment pipeline, (_ii_) CFH measure in  ./src/measure.py, (_iii_) CSBM-X algorithm in ./src/csbm_x.py, and (_iv_) the feature shuffle algorithm in ./src/shuffle.py.
 
@@ -38,7 +38,7 @@ sh ./run/observations.sh
 ---
 
 ## Reproducing CSBM-X Experiments
-To reproduce the CSBM-X experiments in **_Figure 5_**, run the following shell script code.
+To reproduce the CSBM-X experiments in **_Figure 5_** and **_Figure 16_**, run the following shell script code.
 ```bash
 sh ./run/csbmx_exps.sh
 ```
@@ -53,7 +53,15 @@ sh ./run/shuffle_exp(low_hc).sh          ### reproduces Figure 7
 sh ./run/shuffle_exp(low_fd).sh          ### reproduces Figure 8
 sh ./run/shuffle_exp(other_gnns).sh      ### reproduces Figure 9
 sh ./run/shuffle_exp(proximity_feat).sh  ### reproduces Figure 10
-sh ./run/shuffle_exp(sparse_split).sh    ### reproduces Figure 16(b)
+sh ./run/shuffle_exp(sparse_split).sh    ### reproduces Figure 17(b)
+```
+
+---
+
+## Reproducing Pseudo-label-based Feature Shuffle Experiments
+To reproduce the pseudo-label-based feature shuffle experiments, run the following shell script code.
+```bash
+sh ./run/pseudo_label_shuffle_exp.sh     ### reproduces Table 3 in Appendix F
 ```
 
 ---
