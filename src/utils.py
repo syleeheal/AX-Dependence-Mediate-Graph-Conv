@@ -15,7 +15,7 @@ from torch_geometric.data import Data
 from torch_scatter import scatter_mean, scatter_std, scatter_max, scatter_min, scatter_add
 from torch_geometric.nn.models import Node2Vec
 
-from csbm_x import csbmx_graph
+from csbm_x import csbmx_graph, csbmx_two_graph
 from measure import CFH_measure
 from ogb.nodeproppred import PygNodePropPredDataset
 from tabulate import tabulate
@@ -77,6 +77,9 @@ def load_graph(args):
     elif args.dataset in ['csbmx']:
         graph = csbmx_graph(args)
 
+    elif args.dataset in ['csbmx2']:
+        graph = csbmx_two_graph(args)
+
     return graph
 
 
@@ -108,7 +111,7 @@ def load_hyperparam(args):
     return args
 
 
-def split_per_label(graph, train_ratio, val_ratio):
+def split_per_label_ratio(graph, train_ratio, val_ratio):
 
     num_nodes = graph.x.size(0)
     num_labels = int(graph.y.max() + 1)
@@ -139,6 +142,32 @@ def split_per_label(graph, train_ratio, val_ratio):
     return train_idx, val_idx, test_idx
 
 
+def split_per_label_count(graph, train_num_per_label, val_num_per_label):
+
+    num_nodes = graph.x.size(0)
+    num_labels = int(graph.y.max() + 1)
+
+    nodes = torch.arange(num_nodes)
+    train_indices = []
+    val_indices = []
+    test_indices = []
+
+    for i in range(num_labels):
+        nodes_i = nodes[graph.y == i]
+        nodes_i = nodes_i[random.sample(range(nodes_i.shape[0]), nodes_i.shape[0])]
+
+        train_indices.append(nodes_i[0 : train_num_per_label])
+        val_indices.append(nodes_i[train_num_per_label : train_num_per_label + val_num_per_label])
+        test_indices.append(nodes_i[train_num_per_label + val_num_per_label : ])
+
+    train_idx = torch.cat(train_indices)
+    val_idx = torch.cat(val_indices)
+    test_idx = torch.cat(test_indices)
+
+    
+    return train_idx, val_idx, test_idx
+
+
 def process_data(args, graph):
 
     graph = graph.clone()
@@ -147,7 +176,10 @@ def process_data(args, graph):
     """
     data split
     """
-    split = split_per_label(graph, args.train_ratio, args.val_ratio)
+    if args.split_type == 'count':
+        split = split_per_label_count(graph, train_num_per_label=args.train_ratio, val_num_per_label=args.val_ratio)
+    elif args.split_type == 'ratio':
+        split = split_per_label_ratio(graph, train_ratio=args.train_ratio, val_ratio=args.val_ratio)
     train_nodes, val_nodes, test_nodes = split
 
 
@@ -227,7 +259,7 @@ def init_feat(args, graph, init):
 
 def save_results(task, args, outputs):
 
-    if task == 'csbmx':
+    if task in ['csbmx', 'csbmx2']:
         train_accs, val_accs, test_accs, test_corrs, hc_list, hg_list, hvi_list, shuffled_node_ratio_list = outputs
         results_df = pd.DataFrame({'model': args.model,
                                     'dataset': args.dataset,
@@ -335,7 +367,7 @@ def print_outcome(args, exp, test_acc, hg_norm, hc, swap_rate, print_summary):
 
     else:
 
-        if args.dataset == 'csbmx':
+        if args.dataset in ['csbmx', 'csbmx2']:
             if exp == 0: print(tabulate([['Trial', 'Test Acc', 'h(g)', 'hc', 'tau', 'd+/d-', 'mu', 'n']], tablefmt='orgtbl'))
             print(tabulate([[exp, test_acc, hg_norm, hc, args.tau, (args.d_pos / args.d_neg), args.mu, args.num_nodes]], 
                            tablefmt='orgtbl', 

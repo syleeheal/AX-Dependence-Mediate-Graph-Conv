@@ -208,7 +208,7 @@ class AERO_GNN_Model(MessagePassing):
 
         self.in_channels = in_channels
         self.out_channels = out_channels
-        self.heads = self.args.num_heads
+        self.heads = 1
         self.hid_channels = hid_channels
         self.hid_channels_ = self.heads * self.hid_channels
         self.K = int(self.args.iterations)

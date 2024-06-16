@@ -89,6 +89,88 @@ def csbmx_graph(args):
     return graph
 
 
+def csbmx_two_graph(args):
+    """
+    initialize Y by assigning evenly to 10 classes
+    """
+    y = torch.zeros((args.num_nodes, ), dtype=torch.long).to(args.device)
+    num_class = 10
+    for ell in range(num_class):
+        y[args.num_nodes//num_class*ell : args.num_nodes // num_class*(ell+1)] = ell
+    
+
+    """
+    sample X
+    """
+    x_sampler = torch.distributions.multivariate_normal.MultivariateNormal(torch.zeros(num_class), torch.eye(num_class))
+    
+    x_list = []
+    for ell in range(num_class):
+        x_list.append(x_sampler.sample((y[y==ell].shape[0], 1)).to(args.device).squeeze())
+    x = torch.cat(x_list, dim=0)
+
+    """
+    h_p_ij to edge sampling prob
+    """
+    delta_x = torch.cdist(x, x, p=2)
+    h_p_ij = delta_x.mean(dim=1, keepdim=True) - delta_x
+    x_prob = tempered_exp(args.tau, h_p_ij, contains_self=True)
+    for i in range(x_prob.shape[0]): x_prob[i, i] = 0  # prob = 0 for self-loop
+    
+
+    """
+    sample power-law degree distribution
+    """
+    degrees = generate_power_law_samples(alpha=1.5, num_samples=args.num_nodes, xmin=10, xmax=1000)
+    degrees = degrees.int()
+    
+
+    """
+    weighted sampling of directed edges without replacement
+    """
+    edge_idx_list = []
+    pos_ratio = args.d_pos / (args.d_pos + args.d_neg)
+    for node_i in (range(args.num_nodes)):
+        pos_degree = int(degrees[node_i] * pos_ratio)
+        neg_degree = degrees[node_i] - pos_degree
+        
+        y_i = y[node_i]
+        
+        x_prob_i = x_prob[node_i]
+        x_prob_i_intra_class = x_prob_i[y==y_i]
+        x_prob_i_inter_class = x_prob_i[y!=y_i]
+
+        idx_pos = torch.multinomial(x_prob_i_intra_class, pos_degree, replacement=False)
+        idx_neg = torch.multinomial(x_prob_i_inter_class, neg_degree, replacement=False)
+        idx_pos = torch.where(y==y_i)[0][idx_pos]
+        idx_neg = torch.where(y!=y_i)[0][idx_neg]
+        idx = torch.cat([idx_pos, idx_neg], dim=0)
+
+        edge_idx_list.append(idx)
+
+
+    edge_empty = torch.zeros_like(x_prob)
+    for node_i in range(args.num_nodes):
+        edge_empty[node_i, edge_idx_list[node_i]] = 1
+    edge_index = edge_empty.nonzero(as_tuple=False).t()
+
+
+    """
+    non-class-controlled features
+    """
+    for ell in range(num_class):
+        x[y==ell, ell] += args.mu
+        x[y!=ell, ell] -= args.mu
+
+    """
+    to pyg graph
+    """
+    graph = Data(x=x, y=y.cpu(), edge_index=edge_index)
+
+    return graph
+
+
+
 def tempered_exp(t, x, contains_self):
     
     if t > 0 and contains_self:
@@ -104,4 +186,20 @@ def tempered_exp(t, x, contains_self):
         x = x - x_min
 
     return torch.exp(t * x)
+
+
+
+def generate_power_law_samples(alpha, num_samples, xmin=10, xmax=1000):
+    """
+    Generate samples from a power-law distribution with a minimum value x_min.
+    """
+    # Sample from a uniform distribution
+    uniform_samples = torch.rand(num_samples)
+
+    # Transform the uniform samples to power-law distribution
+    power_law_samples = xmin * (uniform_samples ** (1 / (1 - alpha)))
+    power_law_samples = torch.clamp(power_law_samples, max=xmax)
+
+    return power_law_samples
+
 

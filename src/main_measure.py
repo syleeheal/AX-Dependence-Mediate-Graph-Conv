@@ -89,7 +89,6 @@ def parameter_parser():
     parser.add_argument("--model", default="simple-gnn", )
     parser.add_argument("--save", type=bool, default=False,)
 
-
     return parser.parse_args()
 
 

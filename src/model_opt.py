@@ -109,3 +109,31 @@ class Trainer(object):
         test_acc, test_loss, test_corr, test_logits = self.score(graph, best_model, self.test_nodes)
 
         return train_acc, val_acc, test_acc, test_corr
+    
+    def pseudo_shuffle(self, graph, best_model):
+
+        best_model.eval()
+        y_one_hot = F.one_hot(graph.y, self.out_channels).float()
+        num_classes = y_one_hot.size(1)
+
+        prediction = best_model(graph.x, graph.edge_index)
+        probs = F.softmax(prediction, dim=1)
+
+        low_thr = 0.7
+        high_thr = 1
+        mask = (probs > low_thr) & (probs < high_thr)
+        preds = torch.zeros_like(probs)
+        preds[mask] = 1
+
+        preds[self.train_nodes] = y_one_hot[self.train_nodes]
+        preds[self.val_nodes] = y_one_hot[self.val_nodes]
+        
+        for ell in range(num_classes):
+
+            c_preds = preds[:, ell]
+            c_idx = (c_preds == 1).nonzero(as_tuple=False).view(-1).to('cpu')
+
+            permute_idx = torch.randperm(c_idx.shape[0])
+            graph.x[c_idx] = graph.x[c_idx][permute_idx]
+
+        return graph

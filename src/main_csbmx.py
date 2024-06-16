@@ -102,10 +102,11 @@ def parameter_parser():
 
     """EXPERIMENT"""
     parser.add_argument("--device", default="cuda:0", )
-    parser.add_argument("--num-exp", default=1, type=int, help="Experiment number.")
+    parser.add_argument("--num-exp", default=5, type=int, help="Experiment number.")
     parser.add_argument("--model", default="simple-gnn", help="Model type.")
     parser.add_argument("--epochs", type=int, default=500, )
     parser.add_argument("--patience", type=int, default=100, )
+    parser.add_argument("--split-type", type = str, default = 'ratio')
     parser.add_argument("--train-ratio", type = float, default = 0.5)
     parser.add_argument("--val-ratio", type = float, default = 0.25)
     parser.add_argument("--save", type=bool, default=False,)

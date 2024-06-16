@@ -1,0 +1,2 @@
+python3 main_pseudo_shuffle.py --device cuda:3 --pseudo-shuffle True    ### with pseudo-label-based shuffle
+python3 main_pseudo_shuffle.py --device cuda:3                          ### without pseudo-label-based shuffle

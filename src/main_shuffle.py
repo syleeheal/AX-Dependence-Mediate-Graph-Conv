@@ -114,6 +114,7 @@ def parameter_parser():
     parser.add_argument("--model", default="gcn2", help="Model type.")
     parser.add_argument("--epochs", type=int, default=500, )
     parser.add_argument("--patience", type=int, default=100, )
+    parser.add_argument("--split-type", type = str, default = 'ratio')
     parser.add_argument("--train-ratio", type = float, default = 0.5)
     parser.add_argument("--val-ratio", type = float, default = 0.25)
     parser.add_argument("--save", type=bool, default=False,)
