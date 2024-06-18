@@ -1,6 +1,6 @@
 # AX-Dependence-Mediates-Graph-Conv
 
-This is the official code repository of the work "[Feature Distribution on Graph Topology Mediates the Effect of Graph Convolution: Homophily Perspective](https://arxiv.org/abs/2402.04621)," published in ICML 2024. The datasets and codes to reproduce Observations, CSBM-X experiments, and feature shuffle experiments are provided.
+This is the code repository of the work "[Feature Distribution on Graph Topology Mediates the Effect of Graph Convolution: Homophily Perspective](https://arxiv.org/abs/2402.04621)," published in ICML 2024. The datasets and codes to reproduce Observations, CSBM-X experiments, and feature shuffle experiments are provided.
 
 ---
 ## Visual Intuition of the Theoretical Results
